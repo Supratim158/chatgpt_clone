@@ -1,8 +1,8 @@
 import { Router, Request, Response } from "express";
-import { generateOpenAiResposnseController } from "../controllers/generate_openai_controllers";
+import { generateOpenAiResponseController } from "../controllers/generate_openai_controllers";
 
 const openAIRouter = Router();
 
-openAIRouter.post("/", generateOpenAiResposnseController);
+openAIRouter.post("/", generateOpenAiResponseController); // <-- this is okay
 
 export default openAIRouter;
